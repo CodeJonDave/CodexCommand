@@ -1,0 +1,16 @@
+{
+  "KPlugin": {
+    "Id": "CodexCommand",
+    "Name": "Codex Command",
+    "Description": "FCV CC-01 operational KDE Plasma global theme.",
+    "Version": "0.1.0",
+    "Authors": [
+      {
+        "Name": "AlphaCodex"
+      }
+    ],
+    "License": "GPL-3.0-or-later",
+    "Category": "Plasma Look And Feel"
+  },
+  "X-KDE-PluginInfo-Name": "CodexCommand"
+}

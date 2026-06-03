@@ -1,0 +1,9 @@
+{
+    "KPlugin": {
+        "Id": "codex-command-splash",
+        "Name": "Codex Command Splash",
+        "Description": "FCV CC-01 Operational Initialization Display",
+        "Version": "1.0",
+        "License": "GPL-3.0-or-later"
+    }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <defs>
+    <style>
+      .surface { fill:#161C22; }
+      .header { fill:#1B232B; }
+      .border { stroke:#2B3640; stroke-width:1; fill:none; shape-rendering:crispEdges; }
+      .divider { stroke:#2B3640; stroke-width:1; shape-rendering:crispEdges; }
+      .title { fill:#D8DEE9; font-family:"Inter","Noto Sans",sans-serif; font-size:14px; font-weight:700; }
+      .text { fill:#AAB4C0; font-family:"Inter","Noto Sans",sans-serif; font-size:11px; }
+      .action { fill:#101418; stroke:#2B3640; stroke-width:1; }
+    </style>
+  </defs>
+
+  <rect class="surface" width="480" height="320"/>
+  <rect class="header" width="480" height="40"/>
+
+  <rect class="border" x="0.5" y="0.5" width="479" height="319"/>
+
+  <text class="title" x="16" y="25">EVENT DETAILS</text>
+
+  <line class="divider" x1="0" y1="40.5" x2="480" y2="40.5"/>
+  <line class="divider" x1="0" y1="80.5" x2="480" y2="80.5"/>
+
+  <text class="text" x="16" y="65">Timestamp</text>
+  <text class="text" x="16" y="110">Details</text>
+
+  <rect class="action" x="16" y="280" width="120" height="24"/>
+  <text class="text" x="28" y="296">ACKNOWLEDGE</text>
+</svg>

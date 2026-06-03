@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 2048 2048">
+  <rect width="2048" height="2048" fill="none"/>
+
+  <g id="compact-fcv-cc01-crest">
+    <polygon points="1024,505 972,835 1024,780 1076,835" fill="#4F6B3C"/>
+    <polygon points="1543,1024 1213,972 1268,1024 1213,1076" fill="#4F6B3C"/>
+    <polygon points="1024,1543 972,1213 1024,1268 1076,1213" fill="#4F6B3C"/>
+    <polygon points="505,1024 835,972 780,1024 835,1076" fill="#4F6B3C"/>
+
+    <circle cx="1024" cy="1024" r="112" fill="#101418" stroke="#4F6B3C" stroke-width="56"/>
+    <circle cx="1024" cy="1024" r="34" fill="#D8DEE9"/>
+  </g>
+</svg>

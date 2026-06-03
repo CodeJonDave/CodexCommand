@@ -1,0 +1,1875 @@
+Codex Command
+
+System Designation: FCV CC-01
+
+Theme Type: KDE Plasma 6 Global Theme
+
+Mission Philosophy: Operational
+
+Identity Composition:
+50% Spacecraft Bridge
+30% Military Command
+20% Engineering Laboratory
+
+Primary Identity:
+Fleet Command Vessel
+
+========================================
+SYSTEM ARCHITECTURE
+===================
+
+System Name:
+Codex Command
+
+System Designation:
+FCV CC-01
+
+FCV Meaning:
+Fleet Command Vessel
+
+Command Philosophy:
+Status > Decoration
+Function > Atmosphere
+Readability > Effects
+
+Operational Doctrine:
+BREAKING IS NOT FAILURE
+IT IS CREATING A NEW REFERENCE POINT
+
+Crest Doctrine:
+BREAKING IS NOT FAILURE
+
+========================================
+OPERATIONAL CLASSIFICATION SYSTEM
+=================================
+
+INFORMATIONAL
+Steel Blue
+General system information
+
+REFERENCE
+Cyan
+Documentation
+Knowledge
+Reference systems
+
+NAVIGATIONAL
+Bright Blue
+Routing
+Movement
+Navigation
+Positioning
+
+OPERATIONAL
+Forest Green
+Primary mission systems active
+
+NOMINAL
+Military Olive Green
+Expected operating condition
+
+READY
+Bright Green
+Prepared for immediate tasking
+
+ATTENTION REQUIRED
+Bright Yellow
+Operator review needed
+
+WARNING
+Reddish Orange
+Action recommended soon
+
+ALERT
+Intermediate Red
+Immediate operator awareness
+
+FAILURE
+Brick Red
+System unavailable
+
+CRITICAL
+Bright Red
+Mission-impacting condition
+
+
+
+========================================
+WORKSPACE ARCHITECTURE
+======================
+
+Workspace Model:
+Function-Based
+
+Workspace Layout:
+7 Permanent Workspaces
+1 Row
+
+Workspace Naming Convention:
+
+WS-01 CODING
+Development
+Editors
+Build Systems
+
+WS-02 TERMINAL OPS
+Kitty
+tmux
+SSH
+Containers
+
+WS-03 DOCUMENTATION
+Research
+Specifications
+PDFs
+Reference Material
+
+WS-04 MONITORING
+Logs
+Telemetry
+Network Analysis
+System Monitoring
+
+WS-05 COMMUNICATIONS
+Email
+Messaging
+AI Assistants
+Meetings
+
+WS-06 MISSION
+Temporary Projects
+Testing
+Operations
+Specialized Tasks
+
+WS-07 GAMING
+Recreation
+Performance Testing
+
+Workspace Display Format:
+
+WS-01 CODING
+WS-02 TERMINAL OPS
+WS-03 DOCUMENTATION
+WS-04 MONITORING
+WS-05 COMMUNICATIONS
+WS-06 MISSION
+WS-07 GAMING
+
+========================================
+DISPLAY AND PANEL ARCHITECTURE
+==============================
+
+Monitor Configuration:
+
+LEFT DISPLAY
+Operations Display
+
+Primary Uses:
+Monitoring
+Telemetry
+Network Activity
+Logs
+System Status
+
+CENTER DISPLAY
+Bridge Display
+
+Primary Uses:
+IDE
+Terminal
+Engineering
+Development
+Primary Browser
+
+RIGHT DISPLAY
+Knowledge Display
+
+Primary Uses:
+Documentation
+Reference Material
+AI Assistants
+Planning
+Static Dashboards
+
+Panel Architecture:
+
+TOP PANEL
+Mission Status Bar
+
+Left:
+CC-01
+
+Center:
+Current Workspace
+
+Right:
+Network
+VPN
+Audio
+Power
+Notifications
+24-Hour Clock
+
+RIGHT PANEL
+Operations Panel
+
+Mode:
+Icons Only
+
+Functions:
+Application Launcher
+Pinned Applications
+Workspace Navigation
+Mission Controls
+
+Panel Philosophy:
+
+Status Layer Above
+Operations Layer Right
+Primary Workspace Center
+
+
+========================================
+VISUAL IDENTITY
+===============
+
+Theme Name:
+Codex Command
+
+System Designation:
+FCV CC-01
+
+Theme Philosophy:
+Operational
+
+Identity Composition:
+50% Spacecraft Bridge
+30% Military Command
+20% Engineering Laboratory
+
+Design Priorities:
+
+Status > Decoration
+Function > Atmosphere
+Readability > Effects
+
+Visual Characteristics:
+
+Dark Graphite Base
+Military Green Operational Accents
+Angular Geometry
+Technical Styling
+High Information Density
+
+Avoid:
+
+RGB Effects
+Neon Styling
+Excessive Transparency
+Heavy Blur
+Glassmorphism
+Decorative Ornamentation
+
+Operational Role:
+
+Fleet Command Vessel
+
+System Identity Label:
+
+CC-01
+
+Clock Format:
+
+24-Hour
+
+Right Panel Style:
+
+Icons Only
+
+========================================
+CREST SPECIFICATION
+===================
+
+Crest Type:
+Fleet Command Crest
+
+Orientation:
+Circular
+
+Outer Ring Inscription:
+
+FCV • CC-01 • CODEX COMMAND
+
+Inner Ring Motto:
+
+BREAKING IS NOT FAILURE
+
+Central Symbol:
+
+Split-Vector Tactical Compass
+
+Compass Style:
+
+Tactical
+Angular
+Command-Oriented
+
+Design Language:
+
+Military Precision
+Spacefaring Identity
+Operational Authority
+Technical Simplicity
+
+Purpose:
+
+Top Panel Identity
+Splash Screen
+Wallpaper Overlays
+Theme Preview Assets
+Documentation
+
+Full Operational Doctrine:
+
+BREAKING IS NOT FAILURE
+IT IS CREATING A NEW REFERENCE POINT
+
+========================================
+COLOR PALETTE
+=============
+
+PRIMARY SURFACES
+
+Primary Background:
+#101418
+
+Panel Background:
+#161C22
+
+Surface:
+#1B232B
+
+Borders:
+#2B3640
+
+TEXT
+
+Primary Text:
+#D8DEE9
+
+Secondary Text:
+#AAB4C0
+
+OPERATIONAL COLORS
+
+Operational:
+Forest Green
+
+Nominal:
+Military Olive Green
+
+Ready:
+Bright Green
+
+CAUTION COLORS
+
+Attention Required:
+Bright Yellow
+
+Warning:
+Reddish Orange
+
+CRITICAL COLORS
+
+Alert:
+Intermediate Red
+
+Failure:
+Brick Red
+
+Critical:
+Bright Red
+
+INFORMATION COLORS
+
+Informational:
+Steel Blue
+
+Reference:
+Cyan
+
+Navigational:
+Bright Blue
+
+
+========================================
+TERMINAL ARCHITECTURE
+=====================
+
+Terminal Emulator:
+Kitty
+
+Terminal Workflow:
+Single Unified Workflow
+
+Terminal Multiplexer:
+tmux
+
+Primary Shell:
+zsh
+
+Prompt Engine:
+Starship
+
+Font:
+Cascadia Code Nerd Font
+
+Design Philosophy:
+
+One Workflow Everywhere
+
+Applies To:
+
+Local Workstation
+SSH Sessions
+Distrobox Containers
+Remote Systems
+Robot Control Systems
+
+Terminal Doctrine:
+
+Consistency Over Context
+
+The same operational workflow should be maintained
+regardless of machine, container, or remote endpoint.
+
+========================================
+DESIGN PRINCIPLES
+=================
+
+Codex Command is not designed as a desktop theme.
+
+Codex Command is designed as the command interface
+for FCV CC-01.
+
+Evaluation Standard:
+
+Would this exist on a Fleet Command Vessel?
+
+If the answer is no, it should not be added.
+
+Core Principles:
+
+Status > Decoration
+
+Function > Atmosphere
+
+Readability > Effects
+
+Consistency > Novelty
+
+Operational Awareness > Visual Spectacle
+
+Information Density > Empty Space
+
+Mission Context:
+
+Fleet Command Vessel
+
+Primary Responsibilities:
+
+Command
+Control
+Coordination
+
+Secondary Responsibilities:
+
+Engineering
+Analysis
+Development
+
+Design Goal:
+
+The desktop should feel like an active command station
+during mission operations rather than a themed Linux desktop.
+
+
+
+========================================
+ASSET 01
+FLEET COMMAND CREST
+===================
+
+Purpose:
+
+Primary visual identity of FCV CC-01.
+
+Usage:
+
+Top Panel Identity
+Splash Screen
+Wallpaper Overlay
+Theme Preview
+Documentation
+Login Screen
+
+Geometry:
+
+Circular
+
+Outer Ring:
+
+FCV • CC-01 • CODEX COMMAND
+
+Inner Ring:
+
+BREAKING IS NOT FAILURE
+
+Center Symbol:
+
+Split-Vector Tactical Compass
+
+Visual Style:
+
+Angular
+Technical
+Operational
+Military Precision
+Spacefaring Identity
+
+Forbidden Elements:
+
+Fantasy Styling
+Heraldic Animals
+Ornamental Flourishes
+Decorative Filigree
+Neon Effects
+
+Primary Colors:
+
+Operational Forest Green
+Steel Blue
+
+Classification:
+
+Fleet Command Crest
+
+========================================
+ASSET 02
+WALLPAPER SYSTEM
+================
+
+Purpose:
+
+Establish the visual environment of FCV CC-01.
+
+Wallpaper Philosophy:
+
+Operational Environment
+
+Not Artwork
+Not Concept Art
+Not Promotional Material
+
+The wallpaper should appear to be a functional
+part of the vessel command system.
+
+Monitor Architecture:
+
+LEFT DISPLAY
+Operations Layer
+
+CENTER DISPLAY
+Bridge Layer
+
+RIGHT DISPLAY
+Knowledge Layer
+
+Wallpaper Strategy:
+
+Coordinated Multi-Monitor System
+
+Displays should feel related while maintaining
+distinct operational roles.
+
+LEFT DISPLAY
+
+Role:
+Operations
+
+Themes:
+Telemetry
+Network Topology
+Fleet Status
+Operational Data
+
+CENTER DISPLAY
+
+Role:
+Bridge
+
+Themes:
+Fleet Command
+Strategic Operations
+Mission Control
+Vessel Status
+
+RIGHT DISPLAY
+
+Role:
+Knowledge
+
+Themes:
+Reference Material
+Engineering Systems
+Knowledge Archive
+Documentation Grid
+
+Visual Style:
+
+Dark
+Technical
+Structured
+Minimal Distraction
+
+Forbidden Elements:
+
+Characters
+Spaceships
+Weapons
+Explosions
+Movie Posters
+Fantasy Artwork
+Neon Effects
+
+Classification:
+
+Operational Wallpaper System
+
+
+========================================
+ASSET 03
+SPLASH SCREEN
+=============
+
+Purpose:
+
+Present the FCV CC-01 identity during system
+initialization and session startup.
+
+Primary Message:
+
+BREAKING IS NOT FAILURE
+IT IS CREATING A NEW REFERENCE POINT
+
+Secondary Identity:
+
+FCV CC-01
+CODEX COMMAND
+
+Visual Hierarchy:
+
+1. Crest
+2. Doctrine
+3. Vessel Designation
+
+Layout:
+
+Centered
+
+Background:
+
+Dark Graphite
+
+Primary Accent:
+
+Operational Forest Green
+
+Secondary Accent:
+
+Steel Blue
+
+Animation Philosophy:
+
+Minimal
+
+Operational
+
+Purposeful
+
+Allowed Motion:
+
+Subtle Fade
+Subtle Reveal
+
+Forbidden Motion:
+
+Fast Movement
+Particle Effects
+Explosions
+Glows
+Neon Effects
+
+Classification:
+
+Operational Initialization Display
+
+========================================
+ASSET 04
+PANEL VISUAL SYSTEM
+===================
+
+Purpose:
+
+Define the visual appearance of the
+Mission Status Bar and Operations Panel.
+
+Panel Architecture:
+
+TOP PANEL
+Mission Status Bar
+
+RIGHT PANEL
+Operations Panel
+
+Visual Philosophy:
+
+Command Interface
+
+Not Desktop Chrome
+
+Panels should appear to be integrated
+command surfaces.
+
+Top Panel Identity:
+
+CC-01
+
+Workspace Format:
+
+WS-01 CODING
+WS-02 TERMINAL OPS
+WS-03 DOCUMENTATION
+WS-04 MONITORING
+WS-05 COMMUNICATIONS
+WS-06 MISSION
+WS-07 GAMING
+
+Visual Style:
+
+Flat
+Angular
+Dense
+Technical
+
+Surface Characteristics:
+
+Dark Graphite
+Low Reflection
+Minimal Transparency
+No Blur Dependency
+
+Border Style:
+
+Subtle Technical Delineation
+
+Accent Usage:
+
+Operational Colors Only
+
+Panel Height:
+
+28–32 px
+
+Right Panel Width:
+
+44–52 px
+
+Forbidden Elements:
+
+Glassmorphism
+Heavy Blur
+Rounded Consumer Styling
+RGB Effects
+Neon Borders
+
+Classification:
+
+Operational Command Surface
+
+
+========================================
+ASSET 05
+WIDGET VISUAL SYSTEM
+====================
+
+Purpose:
+
+Define the appearance and behavior of
+all command-interface widgets.
+
+Widget Philosophy:
+
+Operational Instrumentation
+
+Widgets should resemble operational
+systems rather than desktop gadgets.
+
+Information Priority:
+
+Status
+Classification
+Trend
+Detail
+
+Visual Hierarchy:
+
+Primary
+Mission-Critical Information
+
+Secondary
+Operational Information
+
+Tertiary
+Reference Information
+
+Color Doctrine:
+
+Use Operational Classification System
+
+Operational:
+Forest Green
+
+Nominal:
+Military Olive Green
+
+Ready:
+Bright Green
+
+Attention Required:
+Bright Yellow
+
+Warning:
+Reddish Orange
+
+Alert:
+Intermediate Red
+
+Failure:
+Brick Red
+
+Critical:
+Bright Red
+
+Informational:
+Steel Blue
+
+Reference:
+Cyan
+
+Navigational:
+Bright Blue
+
+Visual Style:
+
+Flat
+Angular
+Technical
+Dense
+
+Allowed Indicators:
+
+Status Bars
+Readiness Indicators
+Operational States
+Mission Metrics
+
+Forbidden Indicators:
+
+Animated Mascots
+Consumer Widgets
+Decorative Graphics
+RGB Effects
+Neon Effects
+
+Classification:
+
+Operational Instrumentation Layer
+
+========================================
+ASSET 06
+TYPOGRAPHY SYSTEM
+=================
+
+Purpose:
+
+Define all textual presentation standards
+for FCV CC-01.
+
+Primary Typeface:
+
+Cascadia Code Nerd Font
+
+Classification:
+
+Command Interface Typeface
+
+Typography Philosophy:
+
+Operational Readability
+
+Not Branding
+
+Not Decoration
+
+Not Artistic Expression
+
+Information Hierarchy:
+
+LEVEL 1
+System Identity
+
+Example:
+FCV CC-01
+CODEX COMMAND
+
+LEVEL 2
+Workspace Identity
+
+Example:
+WS-01 CODING
+
+LEVEL 3
+Operational Information
+
+Example:
+VPN ACTIVE
+SYSTEM NOMINAL
+
+LEVEL 4
+Reference Information
+
+Example:
+Documentation
+Reference Material
+
+Capitalization Rules:
+
+System Designations:
+UPPERCASE
+
+Workspace Names:
+UPPERCASE
+
+Status States:
+UPPERCASE
+
+Reference Text:
+Sentence Case Allowed
+
+Alignment Philosophy:
+
+Structured
+
+Grid Aligned
+
+Predictable
+
+Forbidden Typography:
+
+Script Fonts
+Decorative Fonts
+Handwritten Fonts
+Display Fonts
+Stylized Sci-Fi Fonts
+
+Classification:
+
+Operational Typography Layer
+
+
+
+========================================
+ASSET 07
+ICONOGRAPHY SYSTEM
+==================
+
+Purpose:
+
+Define visual symbols used throughout
+FCV CC-01.
+
+Icon Philosophy:
+
+Operational Symbolism
+
+Icons must communicate function,
+state, and purpose.
+
+Icons should resemble command-system
+symbology rather than consumer-desktop
+artwork.
+
+Visual Characteristics:
+
+Flat
+Angular
+Technical
+High Contrast
+Recognizable At Small Sizes
+
+Primary Categories:
+
+Navigation
+Communications
+Monitoring
+Mission Operations
+Engineering
+System Control
+Documentation
+
+Status Indicators:
+
+Operational
+Nominal
+Ready
+Attention Required
+Warning
+Alert
+Failure
+Critical
+
+Color Doctrine:
+
+Use Operational Classification System.
+
+Icon Density:
+
+High Information Density
+
+Minimal Decorative Space
+
+Forbidden Iconography:
+
+Cartoons
+Mascots
+Emoji Styling
+Fantasy Symbols
+Gaming Symbols
+Neon Effects
+Excessive Ornamentation
+
+Classification:
+
+Operational Symbol Layer
+
+========================================
+CREST GEOMETRY SPECIFICATION
+============================
+
+Geometry Type:
+
+Circular
+
+Structure:
+
+Outer Authority Ring
+
+Doctrine Ring
+
+Command Symbol Layer
+
+Tactical Origin Point
+
+Outer Ring Contents:
+
+FCV • CC-01 • CODEX COMMAND
+
+Doctrine Ring Contents:
+
+BREAKING IS NOT FAILURE
+
+Core Symbol:
+
+Split-Vector Tactical Compass
+
+Compass Structure:
+
+Four Primary Vectors
+
+North Vector:
+Command
+
+East Vector:
+Coordination
+
+South Vector:
+Analysis
+
+West Vector:
+Control
+
+Center Point:
+
+Operational Origin Marker
+
+Geometry Style:
+
+Angular
+Symmetrical
+Technical
+Precision Aligned
+
+========================================
+CREST VISUAL PROPORTION SPECIFICATION
+=====================================
+
+Reference Diameter:
+
+100 Units
+
+Ring Allocation:
+
+Outer Authority Ring:
+15 Units
+
+Doctrine Ring:
+10 Units
+
+Core Symbol Layer:
+65 Units
+
+Center Origin Marker:
+10 Units
+
+Outer Ring Text Scale:
+
+3.5% of Total Diameter
+
+Doctrine Ring Text Scale:
+
+3.0% of Total Diameter
+
+Compass Core Allocation:
+
+70% of Core Layer
+
+Operational Origin Marker:
+
+10% of Total Diameter
+
+Line Weight Philosophy:
+
+Outer Ring:
+Heavy
+
+Doctrine Ring:
+Medium
+
+Compass Structure:
+Heavy
+
+Center Marker:
+Heavy
+
+Visual Balance Goal:
+
+Authority Ring Visible
+
+Doctrine Ring Readable
+
+Compass Dominant
+
+Center Marker Distinct
+
+
+=================
+window decoration
+=================
+
+
+Window Identity:
+Command Consoles
+
+Titlebar:
+Compact Command Bar
+
+Titlebar Content:
+Application Icon + Title
+
+Title Alignment:
+Active = Left
+Inactive = Center
+
+Controls:
+Hidden Until Hover
+
+Border:
+1 px Technical Border
+
+Status Rail:
+4 px Left Rail
+
+Status Rail Colors:
+Operational Classification System
+
+Titlebar Tint:
+Operational Classification System
+
+Tint Intensity:
+5–8%
+
+Resize Handles:
+Visible Technical Corner Markers
+
+Corner Treatment:
+Square Structural Frame
+2–4 px Radius On Interactive Elements
+
+Inactive Windows:
+Reduced Brightness
+Reduced Saturation
+
+Stacking Behavior:
+Active Console Emphasis
+
+Shadows:
+None
+
+Open / Close:
+Very Fast Structural Expand/Collapse
+
+Maximize / Restore:
+Same Structural Transition System
+
+Motion:
+80–120 ms
+Linear
+No Bounce
+No Elasticity
+No Overshoot
+
+
+========================
+Application style system
+========================
+
+Application Philosophy:
+Command Console
+
+BUTTONS
+
+Style:
+Raised Tactical Buttons
+
+Shape:
+Rectangular
+
+Labeling:
+Text Only
+
+Text Style:
+Title Case
+
+Sizing:
+Compact
+
+
+INPUTS
+
+Style:
+Recessed Data Entry Fields
+
+Focus Indication:
+Thin Operational Border
+
+Shape:
+Rectangular
+
+
+MENUS
+
+Style:
+Hierarchical Operations Menus
+
+Selection Indication:
+Left Selection Rail
+
+
+DROPDOWNS
+
+Style:
+Console Selection Controls
+
+Expansion Behavior:
+Fast Vertical Deploy
+
+
+SCROLLBARS
+
+Style:
+Operational Position Indicator
+
+Purpose:
+Position Awareness
+Progress Awareness
+Context Awareness
+
+
+CONTEXT MENUS
+
+Style:
+Command Invocation Menu
+
+Characteristics:
+Structured
+Operational
+Dense
+Command-Oriented
+Low Decoration
+
+
+
+===================
+Notification system
+===================
+
+Notification Identity:
+Operational Alerts
+
+Position:
+Right Center
+
+Layout:
+Vertical Stack
+
+Appearance:
+Alert Panels
+
+Surface:
+Dark Graphite
+
+Border:
+1 px Technical Border
+
+Severity Indicator:
+Colored Left Status Rail
+
+Severity Colors:
+Operational Classification System
+
+Persistence:
+Severity-Based
+
+Expansion:
+Multi-Level Alert Hierarchy
+
+Grouping:
+Operational Classification Based
+
+Audio:
+Severity-Based Audio
+
+Acknowledgement:
+
+Alert
+Required
+
+Failure
+Required
+
+Critical
+Required
+
+
+
+==================================
+Workspace Switching Visual System
+==================================
+
+Workspace Identity:
+Mission Departments
+
+Indicator Style:
+Department Status Blocks
+
+Layout:
+Command Board Segments
+
+Segment Labels:
+WS-01 through WS-07
+
+Transition Behavior:
+Command Board Reassignment
+
+Status Presentation:
+Operational Classification Status
+
+Active Department:
+Filled Segment
+
+Inactive Departments:
+Reduced Brightness
+Reduced Saturation
+
+Department States:
+Operational Classification System
+
+
+==================
+Lock Screen System
+==================
+
+Lock Screen Identity:
+Security Barrier
+
+Identity Presentation:
+FCV CC-01 + Crest
+
+Information Presentation:
+Time + Authentication
+
+Authentication Presentation:
+Centered Command Access Console
+
+Background:
+Crest Background Field
+
+Crest Treatment:
+Centered Watermark
+
+Authentication Console:
+Rectangular
+Structured
+Centered
+
+Border:
+1 px Technical Border
+
+Authentication Failure:
+Text + Operational Classification Color
+
+Purpose:
+Access Control
+
+Not:
+Mission Display
+Operational Dashboard
+Department Board
+
+
+===================
+Login Screen System
+===================
+
+
+Login Identity:
+Commissioning Screen
+
+Presentation:
+Balanced Identity
+
+Identity Layer:
+FCV CC-01
+Fleet Command Crest
+
+Doctrine:
+BREAKING IS NOT FAILURE
+IT IS CREATING A NEW REFERENCE POINT
+
+Visual Hierarchy:
+Identity
+↓
+Doctrine
+↓
+Authentication
+
+Background:
+Commissioning Background
+
+Composition:
+Crest + Command Grid
+
+Authentication:
+Commissioning Console
+
+Placement:
+Centered Within Crest Geometry
+
+Transition:
+Commissioning Sequence
+
+Purpose:
+System Entry
+Identity Establishment
+Commissioning
+
+
+
+==========================
+Search and Launcher System
+==========================
+
+
+Identity:
+Command Deck
+
+Presentation:
+Right-Side Command Deck
+
+Visual Style:
+Operations Terminal
+
+Primary Interaction:
+Command Entry First
+
+Results:
+Operational Categories
+
+Matching:
+Exact Match Priority
+
+Layout:
+Search Field Left
+Categories Right
+
+Execution:
+Explicit Selection Required
+
+History:
+None
+
+Behavior:
+Deterministic
+
+No Recent Commands
+
+No Usage Learning
+
+No Behavioral Prediction
+
+No Suggested Commands
+
+Purpose:
+System Access
+Application Access
+Command Execution
+Mission-Oriented Navigation
+
+
+===================
+Sound Design System
+===================
+
+
+Sound Philosophy:
+Functional Audio
+
+Sound Character:
+Hybrid Mechanical-Electronic
+
+Volume Model:
+Severity Scaled
+
+Button Interaction:
+Mechanical Confirmation
++
+Electronic Acknowledge
+
+Authentication:
+Success Audio
++
+Failure Audio
+
+Notification Audio:
+Unique Tone Per Classification
+
+Startup:
+Commissioning Sequence Audio
+
+Shutdown:
+Decommissioning Sequence Audio
+
+Audio Characteristics:
+Short
+Precise
+Purposeful
+Informational
+Non-Musical
+
+Forbidden:
+Jingles
+Melodies
+Voice Prompts
+Ambient Loops
+Decorative Effects
+Sci-Fi Movie Effects
+
+
+================
+Animationa style
+================
+
+
+Animation Philosophy:
+Structural Motion
+
+Motion Doctrine:
+Inherited From Window Motion System
+
+Duration:
+80–120 ms
+
+Curve:
+Linear or Near-Linear
+
+Bounce:
+Forbidden
+
+Elasticity:
+Forbidden
+
+Overshoot:
+Forbidden
+
+Purpose:
+Communicate State Change
+
+Not:
+Decoration
+Entertainment
+Atmosphere
+Cinematic Presentation
+
+
+
+Animation Philosophy:
+Structural Motion
+
+Applies To:
+Panel Animation
+Workspace Animation
+Notification Animation
+Menu Animation
+Command Deck Animation
+Authentication Transitions
+Commissioning Sequence
+Window Open
+Window Close
+Maximize
+Restore
+
+Duration:
+80–120 ms
+
+Curve:
+Linear or Near-Linear
+
+Bounce:
+Forbidden
+
+Elasticity:
+Forbidden
+
+Overshoot:
+Forbidden
+
+Purpose:
+Communicate State Change
+
+Not:
+Decoration
+Entertainment
+Atmosphere
+Cinematic Presentation
+
+
+
+=============================
+Application Status Indicators
+=============================
+
+
+Purpose:
+Operational Awareness Layer
+
+Style:
+Rectangular
+Technical
+Dense
+High Readability
+Low Decoration
+
+Presentation:
+Operational Classification Color
++
+Text Label
++
+Optional Status Icon
+
+States:
+
+Loading
+Informational
+Steel Blue
+
+Busy
+Operational
+Forest Green
+
+Syncing
+Navigational
+Bright Blue
+
+Offline
+Warning
+Reddish Orange
+
+Recovering
+Attention Required
+Bright Yellow
+
+Ready
+Bright Green
+
+Nominal
+Military Olive Green
+
+Error
+Failure
+Brick Red
+
+Critical
+Bright Red
+
+Placement Priority:
+
+Inline With Relevant Control
+
+Then:
+Application Status Bar
+
+Then:
+Panel Status Surface
+
+Motion:
+Global Animation Doctrine
+
+Audio:
+Severity-Based
+
+
+
+==========================================
+Dashboard / Telemetry Visualization System
+==========================================
+
+Purpose:
+Operational Awareness
+System Monitoring
+Mission Monitoring
+Telemetry Presentation
+Decision Support
+
+Visualization Philosophy:
+Status > Decoration
+Function > Atmosphere
+Readability > Effects
+Information Density > Empty Space
+Operational Awareness > Visual Spectacle
+
+Visualization Identity:
+Operational Instrumentation
+
+Visual Style:
+Rectangular
+Technical
+Dense
+Structured
+High Contrast
+Low Decoration
+Dark Graphite Foundation
+Operational Classification Colors
+
+Allowed Visualization Types:
+Status Boards
+Telemetry Panels
+Line Graphs
+Bar Graphs
+Event Timelines
+Readiness Displays
+Health Indicators
+Resource Monitors
+Operational Tables
+Mission Metrics
+
+Forbidden:
+3D Charts
+Pie Charts
+Decorative Graphics
+Animated Mascots
+RGB Effects
+Neon Effects
+Marketing Infographics
+
+Color Doctrine:
+Informational = Steel Blue
+Reference = Cyan
+Navigational = Bright Blue
+Operational = Forest Green
+Nominal = Military Olive Green
+Ready = Bright Green
+Attention Required = Bright Yellow
+Warning = Reddish Orange
+Alert = Intermediate Red
+Failure = Brick Red
+Critical = Bright Red
+
+Graph Style:
+Thin Technical Grid
+High Data Visibility
+Low Background Contrast
+Clear Axis Labels
+Clear Units
+No Shadows
+No Glow Effects
+
+Status Boards:
+Rectangular Information Blocks
+Technical Borders
+Operational Classification Colors
+Dense Layout
+Fast Scanning Priority
+
+Telemetry Panels:
+Structured
+Modular
+Operationally Grouped
+Classification Driven
+Mission Context Aware
+
+Data Hierarchy:
+Level 1 = Mission Critical
+Level 2 = Operational
+Level 3 = Reference
+Level 4 = Historical
+
+Motion:
+80–120 ms
+Linear
+No Bounce
+No Elasticity
+No Overshoot
+
+Audio:
+Severity-Based
+Functional
+No Decorative Audio
+
+Purpose:
+Understand Current State
+Understand Trends
+Identify Problems
+Support Decisions
+Maintain Operational Awareness

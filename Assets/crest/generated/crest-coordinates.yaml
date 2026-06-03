@@ -1,0 +1,45 @@
+canvas:
+  width: 2048
+  height: 2048
+
+center:
+  x: 1024
+  y: 1024
+
+rings:
+  authority_outer_radius: 921.6
+  authority_inner_radius: 768.0
+
+  doctrine_outer_radius: 768.0
+  doctrine_inner_radius: 665.6
+
+core_symbol:
+  radius: 665.6
+
+origin_marker:
+  radius: 102.4
+
+text:
+  authority:
+    value: "FCV • CC-01 • CODEX COMMAND"
+
+  doctrine:
+    value: "BREAKING IS NOT FAILURE"
+
+compass:
+  north:
+    role: Command
+
+  east:
+    role: Coordination
+
+  south:
+    role: Analysis
+
+  west:
+    role: Control
+
+  style:
+    geometry: angular
+    symmetry: exact
+    visual_weight: heavy

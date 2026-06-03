@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1464" height="26" viewBox="0 0 1464 26">
+  <defs>
+    <style>
+      .surface { fill:#161C22; }
+      .border { stroke:#2B3640; stroke-width:1; fill:none; shape-rendering:crispEdges; }
+      .text { fill:#D8DEE9; font-family:"Inter","Noto Sans",sans-serif; font-size:11px; font-weight:600; }
+    </style>
+  </defs>
+
+  <rect class="surface" width="1464" height="26"/>
+  <rect class="border" x="0.5" y="0.5" width="1463" height="25"/>
+
+  <text class="text" x="16" y="18">WS-01 CODING</text>
+</svg>

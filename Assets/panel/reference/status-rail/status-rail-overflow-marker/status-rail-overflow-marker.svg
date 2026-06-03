@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4">
+  <defs>
+    <style>
+      .marker { fill:#4A90E2; }
+      .count {
+        fill:#D8DEE9;
+        font-family:"Inter","Noto Sans",sans-serif;
+        font-size:3px;
+        font-weight:600;
+      }
+    </style>
+  </defs>
+
+  <!-- Compressed overflow segment -->
+  <rect class="marker" x="0" y="0" width="8" height="4"/>
+
+  <!-- Overflow count representation -->
+  <text class="count" x="11" y="3">+9</text>
+</svg>

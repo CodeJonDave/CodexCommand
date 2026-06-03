@@ -1,0 +1,85 @@
+FCV CC-01 CREST BLUEPRINT
+
+Canvas:
+2048 x 2048
+
+Center Point:
+1024,1024
+
+Reference Diameter:
+100 Units
+
+Geometry Allocation:
+
+Outer Authority Ring:
+15 Units
+
+Doctrine Ring:
+10 Units
+
+Core Symbol Layer:
+65 Units
+
+Center Origin Marker:
+10 Units
+
+Outer Ring Text:
+FCV • CC-01 • CODEX COMMAND
+
+Doctrine Ring Text:
+BREAKING IS NOT FAILURE
+
+Core Symbol:
+Split-Vector Tactical Compass
+
+Primary Vectors:
+
+North:
+Command
+
+East:
+Coordination
+
+South:
+Analysis
+
+West:
+Control
+
+Center Marker:
+Operational Origin Marker
+
+PRODUCTION GEOMETRY
+
+Canvas Radius:
+1024
+
+Outer Diameter:
+1843
+
+Outer Radius:
+921.6
+
+Doctrine Ring Inner Radius:
+768.0
+
+Core Symbol Radius:
+665.6
+
+Origin Marker Radius:
+102.4
+
+Safe Margin:
+102.4
+
+Typography Orientation:
+Circular
+
+Typography Alignment:
+Centered On Path
+
+Geometry Style:
+Angular
+Symmetrical
+Technical
+Precision Aligned

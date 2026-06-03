@@ -1,0 +1,14 @@
+{
+  "KPlugin": {
+    "Id": "CodexCommand",
+    "Name": "Codex Command",
+    "Description": "FCV CC-01 operational Plasma shell theme",
+    "Version": "0.1.0",
+    "Authors": [
+      {
+        "Name": "AlphaCodex"
+      }
+    ],
+    "License": "GPL-3.0-or-later"
+  }
+}

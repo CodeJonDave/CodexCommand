@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="30" viewBox="0 0 1920 30">
+  <title>Codex Command Mission Status Bar</title>
+  <desc>Center-monitor status-only command surface with identity, workspace, status zone, and structural status rail.</desc>
+
+  <defs>
+    <style>
+      .panel-bg { fill: #161C22; }
+      .surface { fill: #1B232B; }
+      .border { stroke: #2B3640; stroke-width: 1; fill: none; shape-rendering: crispEdges; }
+      .divider { stroke: #2B3640; stroke-width: 1; shape-rendering: crispEdges; }
+      .rail-operational { fill: #2F6B3F; }
+      .text-primary { fill: #D8DEE9; font-family: "Inter", "Noto Sans", sans-serif; font-size: 11px; font-weight: 600; }
+      .text-secondary { fill: #AAB4C0; font-family: "Inter", "Noto Sans", sans-serif; font-size: 10px; font-weight: 500; }
+      .slot { fill: #101418; stroke: #2B3640; stroke-width: 1; shape-rendering: crispEdges; }
+    </style>
+  </defs>
+
+  <!-- Primary panel surface -->
+  <rect class="panel-bg" x="0" y="0" width="1920" height="30"/>
+
+  <!-- Hard zones -->
+  <rect class="surface" x="0" y="0" width="96" height="26"/>
+  <rect class="panel-bg" x="96" y="0" width="1464" height="26"/>
+  <rect class="surface" x="1560" y="0" width="360" height="26"/>
+
+  <!-- Structural borders and zone dividers -->
+  <rect class="border" x="0.5" y="0.5" width="1919" height="29"/>
+  <line class="divider" x1="96.5" y1="0" x2="96.5" y2="26"/>
+  <line class="divider" x1="1560.5" y1="0" x2="1560.5" y2="26"/>
+
+  <!-- Identity zone -->
+  <rect class="slot" x="8.5" y="5.5" width="18" height="16"/>
+  <path d="M17 7 L23 20 L17 17 L11 20 Z" fill="#AAB4C0"/>
+  <circle cx="17" cy="14" r="2" fill="#2F6B3F"/>
+  <text class="text-primary" x="34" y="18">CC-01</text>
+
+  <!-- Workspace zone -->
+  <text class="text-primary" x="112" y="18">WS-01 CODING</text>
+
+  <!-- Status zone slots -->
+  <text class="text-secondary" x="1580" y="18">AUD</text>
+  <text class="text-primary" x="1632" y="18">24:00:00</text>
+  <text class="text-secondary" x="1710" y="18">VPN</text>
+  <text class="text-secondary" x="1764" y="18">NET</text>
+  <text class="text-secondary" x="1818" y="18">NTF</text>
+  <text class="text-secondary" x="1872" y="18">PWR</text>
+
+  <!-- Structural status rail: bottom edge, operational state -->
+  <rect class="rail-operational" x="0" y="26" width="1920" height="4"/>
+</svg>

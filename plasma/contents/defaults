@@ -1,0 +1,15 @@
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.breeze
+theme=Breeze
+
+[kdeglobals][General]
+ColorScheme=Codex Command
+
+[kdeglobals][KDE]
+widgetStyle=Breeze
+
+[plasmarc][Theme]
+name=default
+
+[ksplashrc][KSplash]
+Theme=CodexCommand
