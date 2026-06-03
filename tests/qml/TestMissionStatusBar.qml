@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Window 2.15
+import "../../plasma/contents/ui/mission-status-bar"
 
 Window {
     id: testWindow

@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Layouts 1.15
+import "../status-widgets"
 
 Item {
     id: root
@@ -116,12 +117,19 @@ Item {
                                         anchors.leftMargin: 16
                                         spacing: 18
 
-                                        Text { text: "AUD"; color: root.secondaryText; font.pixelSize: 10 }
-                                        Text { text: "CLK"; color: root.secondaryText; font.pixelSize: 10 }
-                                        Text { text: "VPN"; color: root.secondaryText; font.pixelSize: 10 }
-                                        Text { text: "NET"; color: root.secondaryText; font.pixelSize: 10 }
-                                        Text { text: "NTF"; color: root.secondaryText; font.pixelSize: 10 }
-                                        Text { text: "PWR"; color: root.secondaryText; font.pixelSize: 10 }
+                                        Rectangle {
+                                            width: 1
+                                            height: 16
+                                            color: root.borderColor
+                                        }
+                                        PowerWidget {
+                                        }
+                                        ClockWidget {
+                                        }
+                                        WifiWidget {
+                                        }
+                                        
+
                                     }
                                 }
 

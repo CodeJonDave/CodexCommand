@@ -1,0 +1,46 @@
+{
+  "widgets": [
+    {
+      "id": "audio",
+      "component": "AudioWidget.qml",
+      "enabled": true,
+      "priority": 10
+    },
+    {
+      "id": "vpn",
+      "component": "VpnWidget.qml",
+      "enabled": true,
+      "priority": 20
+    },
+    {
+      "id": "wifi",
+      "component": "WifiWidget.qml",
+      "enabled": true,
+      "priority": 30
+    },
+    {
+      "id": "bluetooth",
+      "component": "BluetoothWidget.qml",
+      "enabled": true,
+      "priority": 40
+    },
+    {
+      "id": "clock",
+      "component": "ClockWidget.qml",
+      "enabled": true,
+      "priority": 50
+    },
+    {
+      "id": "battery",
+      "component": "BatteryWidget.qml",
+      "enabled": true,
+      "priority": 60
+    },
+    {
+      "id": "power",
+      "component": "PowerWidget.qml",
+      "enabled": true,
+      "priority": 70
+    }
+  ]
+}
