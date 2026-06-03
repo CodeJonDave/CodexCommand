@@ -1,0 +1,1110 @@
+# Asset 04 — Panel Visual System
+
+## Status
+
+Design is not complete until explicitly confirmed complete.
+
+Creation, implementation, and testing remain paused until this document is accepted as the authoritative Asset 04 design framework.
+
+---
+
+## 1. Purpose
+
+Asset 04 defines the visual, structural, behavioral, and asset architecture for the Codex Command panel system.
+
+Asset 04 covers only:
+
+* Mission Status Bar
+* Operations Panel
+* Workspace navigation as hosted by the Operations Panel
+* Structural status rails
+* Embedded status markers
+* Panel drawers
+* Panel asset architecture
+
+Asset 04 does not define:
+
+* Widget Visual System
+* Typography System
+* Iconography System
+* Window Decoration
+* Application Style
+* Notifications
+* Lock Screen
+* Login / SDDM
+* Sounds
+* Animations
+* Dashboard / Telemetry Visualization
+
+Asset 04 establishes the command-surface structure that later assets will occupy.
+
+Status Zone elements may expose inspection and quick common actions.
+
+Status Zone elements may not become primary control surfaces.
+
+Complex actions, administration, navigation, and system management remain Operations Panel responsibilities.
+
+---
+
+## 2. Design Doctrine
+
+Codex Command panels follow the FCV CC-01 command-interface doctrine:
+
+* Status > Decoration
+* Function > Atmosphere
+* Readability > Effects
+* Operational Awareness > Visual Spectacle
+* Information Density > Empty Space
+* Responsiveness > Visual Fidelity
+
+The panels must visually read as:
+
+* Fleet command console surfaces
+* Integrated command surfaces
+* Operational control rails
+* Shipboard mission interface panels
+
+The panels must not visually read as:
+
+* Standard desktop panels
+* Consumer desktop chrome
+* Application docks
+* Gaming HUDs
+* Neon sci-fi decoration
+* Glass panels
+
+Forbidden visual elements:
+
+* Glassmorphism
+* Heavy blur
+* Rounded consumer styling
+* RGB effects
+* Neon borders
+* Excessive transparency
+* Decorative ornamentation
+* Pseudo-3D effects
+* Glow effects
+* Gradients used as decoration
+
+---
+
+## 3. Monitor Architecture
+
+Display roles:
+
+### Left Display
+
+Role:
+
+* Operations Display
+
+Primary uses:
+
+* Monitoring
+* Telemetry
+* Network activity
+* Logs
+* System status
+
+### Center Display
+
+Role:
+
+* Bridge Display
+
+Primary uses:
+
+* IDE
+* Terminal
+* Engineering
+* Development
+* Primary browser
+
+### Right Display
+
+Role:
+
+* Knowledge Display
+
+Primary uses:
+
+* Documentation
+* Reference material
+* AI assistants
+* Planning
+* Static dashboards
+
+Panel placement model:
+
+* Mission Status Bar exists only on the center monitor.
+* Operations Panel exists on every monitor.
+* Status is centralized.
+* Command access is distributed.
+
+Resulting layout:
+
+* Left monitor: Operations Panel
+* Center monitor: Mission Status Bar + Operations Panel
+* Right monitor: Operations Panel
+
+---
+
+## 4. Color Architecture
+
+Primary surfaces:
+
+* Primary Background: #101418
+* Panel Background: #161C22
+* Surface: #1B232B
+* Border: #2B3640
+
+Text:
+
+* Primary Text: #D8DEE9
+* Secondary Text: #AAB4C0
+
+Panel-state colors:
+
+* READY → Bright Green
+* OPERATIONAL → Forest Green
+* ATTENTION → Bright Yellow
+* DEGRADED → Reddish Orange
+* CRITICAL → Bright Red
+
+Operational classification colors:
+
+* Informational → Steel Blue
+* Reference → Cyan
+* Navigational → Bright Blue
+* Operational → Forest Green
+* Nominal → Military Olive Green
+* Ready → Bright Green
+* Attention Required → Bright Yellow
+* Warning → Reddish Orange
+* Alert → Intermediate Red
+* Failure → Brick Red
+* Critical → Bright Red
+
+Panel states and operational classifications share the same color doctrine but remain separate systems.
+
+---
+
+## 5. Visual Architecture
+
+Required visual characteristics:
+
+* Flat
+* Angular
+* Dense
+* Technical
+* Dark graphite
+* Low reflection
+* Minimal transparency
+* No blur dependency
+* Subtle technical delineation
+* Operational colors only
+
+Panel surfaces must appear structural, not decorative.
+
+Edges, rails, tabs, and drawers should read as components of a command console rather than themed desktop decoration.
+
+---
+
+## 6. Identity System
+
+The Mission Status Bar identity block contains:
+
+* Compact crest
+* CC-01 identifier
+
+The compact crest is derived from:
+
+* FCV_CC01_Crest_Master.svg
+
+Compact crest requirements:
+
+* Optimized for 16–24 px display
+* Retains Split-Vector Tactical Compass
+* Retains Operational Origin Marker
+* Removes authority ring
+* Removes doctrine ring
+* Removes ring text
+* Removes micro-detail geometry
+
+Purpose:
+
+* Persistent vessel identification
+* FCV CC-01 identity anchor
+* Top-panel identity mark
+
+The identity block is not a branding banner. It is a compact command-surface identifier.
+
+---
+
+## 7. Shared Panel State Architecture
+
+Both panel systems use the same panel-state model:
+
+* READY
+* OPERATIONAL
+* ATTENTION
+* DEGRADED
+* CRITICAL
+
+Each panel owns its own state independently.
+
+Valid example:
+
+* Mission Status Bar: OPERATIONAL
+* Operations Panel: DEGRADED
+
+State-source authority:
+
+* Highest severity source determines panel state.
+
+State transition model:
+
+* Hybrid
+
+Escalation:
+
+* Automatic
+
+Recovery:
+
+* Operator confirmed
+
+Escalation path:
+
+READY
+→ OPERATIONAL
+→ ATTENTION
+→ DEGRADED
+→ CRITICAL
+
+Recovery path:
+
+CRITICAL
+→ DEGRADED
+→ ATTENTION
+→ OPERATIONAL
+→ READY
+
+Recovery rules:
+
+* Recovery may not skip states.
+* Recovery is not automatic.
+* Recovery requires operator confirmation.
+* Each recovery step must be confirmed independently.
+
+Operational classification to panel-state mapping occurs through a translation layer.
+
+State relationship rules:
+
+* Panel-state transitions do not generate markers.
+* Markers exist to notify.
+* Panel state exists to represent current condition.
+* Acknowledging a marker does not affect panel state.
+* Only underlying conditions may alter panel state.
+
+Failure behavior:
+
+* If a panel cannot determine its state, it enters fail-safe behavior.
+
+Startup behavior:
+
+* Panels initialize as STATE UNKNOWN until authoritative state sources are evaluated.
+
+Session restore behavior:
+
+* Panel state is re-evaluated.
+* Saved session state is not trusted as current condition.
+
+Multi-monitor failure behavior:
+
+* Operations Panel failure is local to the affected monitor.
+* Other Operations Panels continue operating.
+* Mission Status Bar continues operating unless its own state authority fails.
+
+Accessibility rule:
+
+* State and severity communication use color only, supported by position, ordering, and persistence.
+* Shape, geometry, and size variants are not required for accessibility within Asset 04.
+
+Performance priority:
+
+* Responsiveness
+* Readability
+* Visual fidelity
+
+---
+
+## 8. Mission Status Bar
+
+Role:
+
+* Status-only surface
+* Operational awareness layer
+* Bridge instrumentation
+
+Purpose:
+
+* Observe
+* Monitor
+* Assess
+
+Prohibited functions:
+
+* Launching
+* Executing
+* Controlling
+* Configuring
+* Workspace switching commands
+* Mission controls
+* Command execution
+
+Placement:
+
+* Center monitor only
+* Full width of center/main monitor
+* Top screen edge
+
+Geometry:
+
+* Target height: 30 px
+* Allowed height range: 28–32 px
+
+Layout model:
+
+* Three hard zones
+
+Zone order:
+
+* Left: Identity
+* Center: Workspace
+* Right: Status
+
+Identity zone:
+
+* Width: 96 px
+* Type: Compact
+* Contents:
+
+  * Compact crest
+  * CC-01 identifier
+
+Workspace zone:
+
+* Width: Elastic
+* Consumes remaining space between Identity and Status zones
+* Shows current workspace using full name
+
+Status zone:
+
+* Width: Content width
+* Contains:
+
+  * Audio
+  * Clock
+  * VPN
+  * Network
+  * Notifications
+  * Power
+
+Status ordering:
+
+1. Audio
+2. Clock
+3. VPN
+4. Network
+5. Notifications
+6. Power
+
+Clock format:
+
+* 24-hour
+* Seconds visible
+* Format: 24:00:00
+
+Overflow behavior:
+
+* Priority collapse
+* Lower-priority status elements collapse first.
+* Higher-priority operational awareness remains visible longest.
+
+Status rail:
+
+* Bottom edge
+* Edge furthest from screen edge
+
+Drawer expansion:
+
+* Downward
+
+---
+
+## 9. Operations Panel
+
+Role:
+
+* Command surface
+* Operational action layer
+* Operations rail
+
+Purpose:
+
+* Launch
+* Execute
+* Navigate
+* Control
+* Acknowledge
+* Operate
+
+Placement:
+
+* One Operations Panel per monitor
+* Right edge of each monitor
+
+Geometry:
+
+* Target width: 48 px
+* Allowed width range: 44–52 px
+
+Behavior:
+
+* Auto-hide
+* Icons only
+* Status rail remains visible while hidden
+
+Zone order:
+
+1. Launcher
+2. Pinned Applications
+3. Mission Controls
+4. Workspace Navigation
+
+Launcher zone:
+
+* Single top slot
+* Global entry point
+* Always available
+
+Pinned Applications zone:
+
+* Fixed slot count
+* Slot positions remain stable
+
+Mission Controls zone:
+
+* System functions
+* Workspace functions
+* Flat command structure
+
+Mission Controls include:
+
+* Session control
+* Power functions
+* Panel functions
+* Environment functions
+* Mission-level system operations
+* Workspace creation
+* Workspace management
+* Workspace assignment
+* Workspace state operations
+* Workspace administrative actions
+
+Workspace Navigation zone:
+
+* Bottom zone
+* Context switching
+
+Zone layout:
+
+* Fixed
+* No user reordering
+* No dynamic relocation
+* No adaptive zone movement
+
+Reveal trigger distance:
+
+* 4–6 px from the screen edge
+
+Retract delay:
+
+* 0 seconds
+
+Hidden-state interaction:
+
+* Inspection supported
+* Acknowledgement supported
+* Panel deployment not required for rail marker inspection or acknowledgement
+
+Status rail:
+
+* Left edge
+* Edge furthest from screen edge
+* Remains visible while panel is hidden
+
+Drawer expansion:
+
+* Leftward
+
+---
+
+## 10. Workspace Navigation System
+
+Workspace model:
+
+* Function-based
+* 7 permanent workspaces
+* 1 row
+
+Workspace names:
+
+* WS-01 CODING
+* WS-02 TERMINAL OPS
+* WS-03 DOCUMENTATION
+* WS-04 MONITORING
+* WS-05 COMMUNICATIONS
+* WS-06 MISSION
+* WS-07 GAMING
+
+Mission Status Bar workspace role:
+
+* Awareness only
+* Displays current workspace using full name
+
+Operations Panel workspace role:
+
+* Command function
+* Provides workspace navigation
+
+Representation:
+
+* Blocks + labels
+
+Layout:
+
+* Compact
+
+Geometry:
+
+* Narrow tabs
+
+Active workspace:
+
+* Filled tab
+
+Inactive workspace:
+
+* Outlined tab
+
+Workspace attention presentation:
+
+* Colored outline
+
+Workspace status integration:
+
+* Single highest-priority status
+
+Hover behavior:
+
+* Temporarily filled
+
+Selection behavior:
+
+* Select then confirm
+
+Label visibility:
+
+* Visible only for:
+
+  * Active
+  * Hover
+  * Pending
+
+Workspace switching is deliberate, not immediate.
+
+---
+
+## 11. Structural Status Rail System
+
+Each panel has a structural status rail.
+
+Classification:
+
+* Panel structure
+* Not decoration
+* Not widget
+* Not ordinary indicator
+
+Placement rule:
+
+* Rail sits on the panel edge furthest from the screen edge.
+
+Mission Status Bar rail:
+
+* Bottom edge
+
+Operations Panel rail:
+
+* Left edge
+
+Rail visibility:
+
+* Rail remains visible when panel is hidden.
+
+Rail width:
+
+* 3–4 px
+
+Rail type:
+
+* Solid rail with embedded status markers
+
+Rail purpose:
+
+* Persistent operational awareness
+* Panel state visibility
+* State recognition while panel is hidden
+
+Rail base color authority:
+
+* Panel state
+
+Rail base color mapping:
+
+* READY → Bright Green
+* OPERATIONAL → Forest Green
+* ATTENTION → Bright Yellow
+* DEGRADED → Reddish Orange
+* CRITICAL → Bright Red
+
+Rail appearance with no markers:
+
+* Solid state rail
+
+Rail appearance with overflow markers:
+
+* Inline
+
+Rail ownership:
+
+* Mission Status Bar rail represents Mission Status Bar state.
+* Operations Panel rail represents Operations Panel state.
+
+---
+
+## 12. Embedded Status Marker System
+
+Embedded markers are part of the structural rail.
+
+Marker type:
+
+* Embedded line segment
+
+Marker appearance:
+
+* Flat
+* Single-color segment
+* No bevel
+* No emboss
+* No glow
+* No gradient
+* No pseudo-3D treatment
+
+Marker geometry:
+
+* Uniform
+* Same size regardless of severity
+
+Marker length:
+
+* 4–8 px
+
+Marker spacing:
+
+* 2 px
+
+Maximum visible marker capacity:
+
+* 32 markers
+
+Marker severity communication uses:
+
+* Color
+* Ordering
+* Position
+* Persistence
+
+Marker severity does not use:
+
+* Size scaling
+* Area scaling
+* Visual dominance scaling
+
+Marker persistence:
+
+* Latched
+
+Marker acknowledgement:
+
+* Per marker
+
+Acknowledgement scope:
+
+* Individual marker
+
+Marker ordering:
+
+* Hybrid
+* Severity first
+* Chronological within severity
+
+Marker placement:
+
+* Ordered rebuild
+
+Marker capacity:
+
+* Fixed
+
+Overflow behavior:
+
+* Per-severity merge
+
+Overflow representation:
+
+* Compressed segment + count
+
+Overflow placement:
+
+* Inline with normal marker stream
+
+Marker color authority:
+
+* Operational Classification System
+
+Rail interaction:
+
+* Interactive
+
+Interaction philosophy:
+
+* Inspect first
+
+Clicking or selecting a marker:
+
+* Opens inspection
+* Does not automatically acknowledge
+
+Acknowledgement:
+
+* Separate intentional operator action
+
+Inspection location:
+
+* Panel drawer
+
+Marker lifecycle:
+
+1. Event occurs.
+2. Marker is created.
+3. Marker latches.
+4. Marker remains even if condition clears.
+5. Operator selects marker.
+6. Panel drawer opens.
+7. Operator inspects details.
+8. Operator acknowledges marker or leaves it latched.
+9. If acknowledged, individual marker is removed.
+10. Rail is rebuilt according to ordering rules.
+
+---
+
+## 13. Drawer System
+
+Drawer purpose:
+
+* Marker inspection
+* Event details
+* Acknowledgement controls
+
+Drawer location:
+
+* Panel-owned
+* Not external window
+* Not modal dialog
+* Not notification popup
+
+Drawer dimensions:
+
+* Width: 480 px
+* Height: Adaptive
+
+Drawer content hierarchy:
+
+1. Header
+2. Details
+3. Actions
+
+Dismissal:
+
+* Explicit close only
+
+Invalid dismissal triggers:
+
+* Outside click
+* Pointer leave
+* Focus loss
+* Hover loss
+* Timeout
+
+Acknowledgement controls:
+
+* Top of drawer
+
+Visual hierarchy:
+
+* Technical dividers
+
+Header structure:
+
+* Event title
+* Timestamp
+
+Footer structure:
+
+* Actions only
+
+Mission Status Bar drawer:
+
+* Expands downward
+
+Operations Panel drawer:
+
+* Expands leftward
+
+Drawer persistence:
+
+* Auto-close
+
+Drawer concurrency:
+
+* One open drawer
+
+Hidden Operations Panel behavior:
+
+* Drawer opens directly.
+* Operations Panel remains hidden.
+* Drawer opening does not force Operations Panel deployment.
+
+Drawer state model:
+
+* Closed
+* Open
+
+No pinned drawer state.
+
+---
+
+## 14. Information Architecture
+
+Mission Status Bar permanent information:
+
+* Compact crest + CC-01
+* Current workspace
+* Audio
+* Clock
+* VPN
+* Network
+* Notifications
+* Power
+* Panel operational state
+* Operational event awareness through rail markers
+
+Mission Status Bar prohibited actions:
+
+* Application launching
+* Workspace switching commands
+* Mission controls
+* Configuration actions
+* Command execution
+
+Operations Panel permanent/control information:
+
+* Application launcher
+* Pinned applications
+* Workspace navigation
+* Mission controls
+* Operational commands
+* Event inspection access
+* Event acknowledgement access
+
+Operations Panel prohibited behavior:
+
+* Acting as a passive-only status bar
+* Replacing Mission Status Bar awareness role
+* Displaying non-command decorative content
+
+Separation of responsibility:
+
+* Mission Status Bar = operational awareness
+* Operations Panel = operational action
+
+---
+
+## 15. Asset Architecture
+
+Asset inventory structure:
+
+* Implementation assets
+* Design reference assets
+
+Naming convention:
+
+* Functional names
+
+Example asset names:
+
+* mission-status-bar.svg
+* operations-panel.svg
+* workspace-tab.svg
+* status-rail.svg
+* embedded-marker.svg
+* drawer-surface.svg
+* launcher-slot.svg
+* pinned-app-slot.svg
+* mission-control-slot.svg
+* technical-border.svg
+
+Creation strategy:
+
+* Dependency-driven
+
+Creation philosophy:
+
+* Structure first
+* Dependencies second
+* Specialization last
+
+Plasma relationship:
+
+* One design reference asset may produce multiple Plasma assets.
+
+Design reference assets:
+
+* Authoritative design sources
+
+Implementation assets:
+
+* Plasma theme derivatives
+
+Shared asset strategy:
+
+* Centralized
+
+Dependency documentation:
+
+* Full dependency graph
+
+Ownership model:
+
+* Single owner
+
+Consumer model:
+
+* One owner
+* Multiple consumers
+
+Ownership rule:
+
+* Every asset has exactly one owner.
+* Assets may have multiple consumers.
+
+---
+
+## 16. Asset Inventory
+
+Existing confirmed assets:
+
+* Assets/panel/compact-crest.svg
+* plasma/desktoptheme/CodexCommand/widgets/panel-background.svg
+
+Existing asset status:
+
+* compact-crest.svg exists as initial panel identity asset.
+* panel-background.svg exists as initial surface-color asset.
+
+Required design reference asset categories:
+
+### Mission Status Bar
+
+* mission-status-bar
+* mission-status-bar-identity-zone
+* mission-status-bar-workspace-zone
+* mission-status-bar-status-zone
+* mission-status-bar-drawer
+
+### Operations Panel
+
+* operations-panel
+* operations-panel-launcher-zone
+* operations-panel-pinned-zone
+* operations-panel-mission-control-zone
+* operations-panel-workspace-zone
+* operations-panel-drawer
+
+### Workspace Navigation
+
+* workspace-tab
+* workspace-tab-active
+* workspace-tab-inactive
+* workspace-tab-hover
+* workspace-tab-pending
+* workspace-tab-attention
+
+### Structural Rail
+
+* status-rail
+* status-rail-marker
+* status-rail-overflow-marker
+
+### Shared Panel Assets
+
+* technical-border
+* technical-divider
+* hover-state
+* active-state
+* disabled-state
+* attention-state
+
+Implementation assets will be derived from these design reference assets according to Plasma 5.27 requirements.
+
+---
+
+## 17. Current Status
+
+Asset 04 status:
+
+* Framework rewrite: complete
+* Design: not complete until user confirms
+* Creation: paused
+* Implementation: not active
+* Testing: not active
+
+Completed design groups:
+
+* Workspace Navigation
+* Structural Status Rail System
+* Drawer System
+* Operations Panel Architecture
+* Mission Status Bar Architecture
+* Panel State System
+* Asset Architecture
+* Framework Integrity
+
+Remaining action:
+
+* User review
+* Gap check
+* Explicit user confirmation before marking Design complete
