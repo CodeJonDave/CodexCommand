@@ -117,18 +117,25 @@ Item {
                                         anchors.leftMargin: 16
                                         spacing: 18
 
-                                        Rectangle {
-                                            width: 1
-                                            height: 16
-                                            color: root.borderColor
+
+                                        AudioWidget {
                                         }
-                                        PowerWidget {
-                                        }
-                                        ClockWidget {
+                                        VpnWidget {
                                         }
                                         WifiWidget {
                                         }
-                                        
+                                        BluetoothWidget {
+                                        }
+                                        ClockWidget {
+                                        }
+                                        BatteryWidget {
+                                        }
+                                        PowerWidget {
+                                        }
+
+
+
+
 
                                     }
                                 }
