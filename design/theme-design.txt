@@ -342,7 +342,7 @@ COLOR PALETTE
 PRIMARY SURFACES
 
 Primary Background:
-#101418
+#0C1A1F
 
 Panel Background:
 #161C22
@@ -364,43 +364,44 @@ Secondary Text:
 OPERATIONAL COLORS
 
 Operational:
-Forest Green
+#494D32
 
 Nominal:
-Military Olive Green
+#263220
+
 
 Ready:
-Bright Green
+#00AB00
 
 CAUTION COLORS
 
 Attention Required:
-Bright Yellow
+#FFFA00
 
 Warning:
-Reddish Orange
+#CC581F
 
 CRITICAL COLORS
 
 Alert:
-Intermediate Red
+#A82A2A
 
 Failure:
-Brick Red
+#75261D
 
 Critical:
-Bright Red
+#FF0000
 
 INFORMATION COLORS
 
 Informational:
-Steel Blue
+#597694
 
 Reference:
-Cyan
+#5D8C8C
 
 Navigational:
-Bright Blue
+#0032C7
 
 
 ========================================
